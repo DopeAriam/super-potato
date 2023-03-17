@@ -1,0 +1,52 @@
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-buttons button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .tab-buttons button.active {
+    color: #f00;
+  }
+  
+  .tab-content-container {
+    height: 100vh;
+    width: 300vw;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .tab-content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .tab-content.active {
+    transform: translateX(0%);
+  }
+  
+  .tab-content:nth-child(2).active {
+    transform: translateX(-100%);
+  }
+  
+  .tab-content:nth-child(3).active {
+    transform: translateX(-200%);
+  }
+  
